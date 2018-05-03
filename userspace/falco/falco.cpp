@@ -482,6 +482,9 @@ int falco_init(int argc, char **argv)
 
 		inspector = new sinsp();
 
+		// force capture 1000 bytes
+		inspector->set_snaplen(1000);
+
 		if(print_ignored_events)
 		{
 			print_all_ignored_events(inspector);
