@@ -418,6 +418,10 @@ int falco_init(int argc, char **argv)
 
 
 		inspector = new sinsp();
+
+		// force capture 1024 bytes
+		inspector->set_snaplen(1024);
+
 		engine = new falco_engine();
 		engine->set_inspector(inspector);
 		engine->set_extra(output_format, replace_container_info);
