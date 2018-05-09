@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.2)
 project(falco)
 
 if(NOT DEFINED FALCO_VERSION)
-	set(FALCO_VERSION "0.1.1dev")
+	set(FALCO_VERSION "0.9.0-1")
 endif()
 
 if(NOT DEFINED FALCO_ETC_DIR)
